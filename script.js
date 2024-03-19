@@ -19,7 +19,7 @@ function android() {
 
 $(function () {
   if (iOS()) {
-      window.location = "https://staging.app.hoshu.co.jp/.well-known/apple-app-site-association";
+      window.location = "https://apps.apple.com/us/app/hoshu/id1663394441https://apps.apple.com/us/app/hoshu/id1663394441";
   }
   if (android()) {
     window.location = "https://staging.app.hoshu.co.jp/.well-known/assetlinks.json";

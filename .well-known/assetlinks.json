@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "jp.co.hoshu",
+    "sha256_cert_fingerprints":
+    ["73:A4:41:E7:03:C0:95:85:45:40:CA:1E:D9:FA:7B:45:DB:F0:B9:EA:AA:ED:71:3A:7B:43:14:97:4D:25:47:4F", 
+    "BD:DD:88:E5:CE:53:94:63:66:58:CC:96:49:BC:9D:B8:98:B1:EF:B7:9A:F7:F4:74:46:F9:E0:A4:CC:B8:C8:C0"
+  ]
+  }
+}]
