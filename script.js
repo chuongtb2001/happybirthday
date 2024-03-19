@@ -19,9 +19,9 @@ function android() {
 
 $(function () {
   if (iOS()) {
-      window.location = "https://apps.apple.com/us/app/hoshu/id1663394441https://apps.apple.com/us/app/hoshu/id1663394441";
+      window.location = "https://apps.apple.com/us/app/hoshu/id1663394441";
   }
   if (android()) {
-    window.location = "https://staging.app.hoshu.co.jp/.well-known/assetlinks.json";
+    window.location = "https://play.google.com/store/apps/details?id=jp.co.hoshu";
 }
 })
