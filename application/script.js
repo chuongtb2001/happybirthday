@@ -17,10 +17,9 @@ function android() {
     return isAndroid
 }
 
-function window() {
+function isWindow() {
     var ua = navigator.userAgent.toLowerCase();
-    var isWindow = ua.indexOf("window") > -1;
-    return isWindow
+    return ua.indexOf("window") > -1;
 }
 
 $(function () {
@@ -30,7 +29,7 @@ $(function () {
   if (android()) {
     window.location = "https://play.google.com/store/apps/details?id=jp.co.hoshu";
   }
-  if (window()) {
+  if (isWindow()) {
     window.location = "ms-windows-store://pdp/?productid=XP99DGJH0DLM38";
   }
 });
