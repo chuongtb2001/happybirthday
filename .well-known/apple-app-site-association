@@ -5,7 +5,7 @@
              "appIDs": [ "J6SX67BN4G.jp.co.hoshu"],
              "components": [
                {
-                  "/": "/application/*",
+                  "/": "/application/ios",
                   "comment": "Matches any URL whose path starts with /buy/"
                }
              ]
