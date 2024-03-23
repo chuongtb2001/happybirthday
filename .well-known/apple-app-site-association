@@ -7,7 +7,11 @@
                {
                   "/": "/application/ios*",
                   "comment": "Matches any URL whose path starts with /buy/"
-               }
+               },
+               {
+                "/": "/application/ios/*",
+                "comment": "Matches any URL whose path starts with /buy/"
+             }
              ]
            }
        ]
@@ -15,4 +19,4 @@
    "webcredentials": {
       "apps": [ "J6SX67BN4G.jp.co.hoshu" ]
    }
-}
+} 
