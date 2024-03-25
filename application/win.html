@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ios</title>
+    <title>win</title>
   </head>
   <body></body>
   <script
@@ -15,6 +15,10 @@
     id="jquery-migrate-js"
   ></script>
   <script>
-    window.location = "hoshuapp://"
+    try {
+      window.location = "hoshuapp://"
+    } catch (error) {
+      console.log(error)
+    }
   </script>
 </html>
