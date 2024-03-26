@@ -15,8 +15,13 @@
     id="jquery-migrate-js"
   ></script>
   <script>
+    function win() {
+        var ua = navigator.userAgent.toLowerCase();
+        return ua.indexOf("window") > -1;
+      }
     try {
-      window.location = "hoshuapp://"
+      if (win())
+      window.location = "hoshu-app://"
     } catch (error) {
       console.log(error)
     }
