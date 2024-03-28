@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ja">
+
+<head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <h1>HOSHU</h1>
-  </body>
-  <script>
-    function win() {
-        var ua = navigator.userAgent.toLowerCase();
-        return ua.indexOf("window") > -1;
-      }
-    try {
-      if (win())
-      window.location = "hoshu-app://"
-    } catch (error) {
-      console.log(error)
-    }
-  </script>
+    <title>運営会社｜ホシュー</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@300;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="/images//favicon.ico">
+</head>
+
+<body class="page application">
+    <div class="contents">
+        <div>
+            <main role="main">
+                <div class="l-page-content">
+                    <div class="l-wrap">
+                        <section class="content">
+                            <img src="/images/img_38.png" class="logo-text" />
+                            <div class="company-box">
+                                <div class="group">
+                                    <p>しばらくするとリダイレクトされます。</p>
+                                    <p>アプリをうまく起動できない場合は <a href="https://app.hoshu.co.jp/">ブラウザから起動してください。</a></p>
+                                    <p>アプリをまだインストールしていない場合は、<a href="https://apps.microsoft.com/detail/xp99dgjh0dlm38">ここ</a>からインストールしてください </p>
+                                    <br/>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <img src="/images/character_9.png" class="logo-icon" />
+                <p class="bottom-text">
+                    <span class="text-center"> 
+                        <!-- <a href="/privacypolicy">プライバシーポリシー</a> / <a href="/terms">利用規約</a>
+                        <br />
+                        <br /> -->
+                        <span> ©️hoshu.inc </span>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function win() {
+            var ua = navigator.userAgent.toLowerCase();
+            return ua.indexOf("window") > -1;
+          }
+        try {
+          if (win())
+          window.location = "hoshu-app://"
+        } catch (error) {
+          console.log(error)
+        }
+      </script>
+</body>
+
 </html>
