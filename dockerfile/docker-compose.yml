@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: ../dockerfile/Dockerfile.app
+    networks:
+      - mynetwork
+    ports:
+      - "3000:3000"
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ../dockerfile/Dockerfile.nginx
+    networks:
+      - mynetwork
+    ports:
+      - "80:80"
+    depends_on:
+      - nextjs
+networks:
+  mynetwork:
+    driver: bridge

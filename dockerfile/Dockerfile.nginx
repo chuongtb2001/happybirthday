@@ -1,0 +1,11 @@
+# Stage 3: Set up Nginx
+FROM nginx:latest
+
+# Copy Nginx configuration files
+COPY ut-em.store.conf /etc/nginx/conf.d/ut-em.store.conf
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
